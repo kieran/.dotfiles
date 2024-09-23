@@ -10,3 +10,5 @@ plug "wintermi/zsh-starship"
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
+
+eval "$(mcfly init zsh)"
