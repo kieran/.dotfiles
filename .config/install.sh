@@ -2,10 +2,13 @@
 
 # check out dotfiles
 cd $HOME
-git clone https://github.com/kieran/.dotfiles.git
+git clone https://github.com/kieran/.dotfiles.git .dotfiles.git
 
 # set git alias
 git config --global alias.dotfiles '!git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
+
+# checkout files
+git dotfiles checkout main
 
 # install nerd font via getnf
 curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash
